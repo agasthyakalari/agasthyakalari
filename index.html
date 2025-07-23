@@ -1,1 +1,1273 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agasthya Bharatha Kalari Sangham| Traditional Kalaripayattu & Siddha Healing</title>
+	<meta name="description" content="Siddha medicine, Traditional Kalaripayattu training, Siddha Healing, and holistic wellness in Kerala.">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+	<link rel="manifest" href="./icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Fonts & Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<style>
+		:root {
+			--primary: #8e6c35;
+			--secondary: #4a3520;
+			--light: #f5f0e6;
+			--dark: #232e36;
+			--accent: #c19e5f;
+			--transition: all 0.4s ease;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			color: var(--dark);
+			background-color: var(--light);
+			overflow-x: hidden;
+			line-height: 1.6;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			color: var(--secondary);
+			line-height: 1.2;
+		}
+
+		/* Header Styles */
+		header {
+			background-color: rgba(255, 255, 255, 0.95);
+			position: fixed;
+			width: 100%;
+			z-index: 1000;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+			transition: var(--transition);
+		}
+
+		.header-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 15px 20px;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo h1 {
+			font-size: 1.8rem;
+			color: var(--primary);
+			margin-left: 10px;
+		}
+
+		.logo-icon {
+			width: 50px;
+			height: 50px;
+			background-color: var(--primary);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 1.5rem;
+		}
+
+		nav ul {
+			display: flex;
+			list-style: none;
+		}
+
+		nav ul li {
+			margin: 0 15px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: var(--dark);
+			font-weight: 500;
+			position: relative;
+			padding: 5px 0;
+			transition: var(--transition);
+		}
+
+		nav ul li a:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background-color: var(--primary);
+			transition: var(--transition);
+		}
+
+		nav ul li a:hover:after {
+			width: 100%;
+		}
+
+		nav ul li a:hover {
+			color: var(--primary);
+		}
+
+		.mobile-menu-btn {
+			display: none;
+			background: none;
+			border: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+			color: var(--primary);
+		}
+
+		/* Hero Section */
+		.hero {
+			height: 100vh;
+			background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/hero_image_to_upload.jpg') center/cover no-repeat;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: white;
+			padding: 0 20px;
+		}
+
+		.hero-content {
+			max-width: 800px;
+			animation: fadeInUp 1s ease;
+		}
+
+		.hero h1 {
+			font-size: 3.5rem;
+			margin-bottom: 20px;
+			color: white;
+			text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		.hero p {
+			font-size: 1.2rem;
+			margin-bottom: 30px;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 12px 30px;
+			background-color: var(--primary);
+			color: white;
+			text-decoration: none;
+			border-radius: 30px;
+			font-weight: 500;
+			transition: var(--transition);
+			border: 2px solid var(--primary);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 0.9rem;
+		}
+
+		.btn:hover {
+			background-color: transparent;
+			color: var(--primary);
+			transform: translateY(-3px);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+		}
+
+		.btn-outline {
+			background-color: transparent;
+			border: 2px solid white;
+			margin-left: 15px;
+		}
+
+		.btn-outline:hover {
+			background-color: white;
+			color: var(--primary);
+		}
+
+		/* Section Styling */
+		section {
+			padding: 100px 20px;
+		}
+
+		.section-title {
+			text-align: center;
+			margin-bottom: 60px;
+			position: relative;
+		}
+
+		.section-title h2 {
+			font-size: 2.5rem;
+			display: inline-block;
+			position: relative;
+		}
+
+		.section-title h2:after {
+			content: '';
+			position: absolute;
+			bottom: -15px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80px;
+			height: 3px;
+			background-color: var(--primary);
+		}
+
+		/* About Section */
+		.about-content {
+			display: flex;
+			align-items: center;
+			max-width: 1200px;
+			margin: 0 auto;
+			gap: 50px;
+		}
+
+		.about-text {
+			flex: 1;
+		}
+
+		.about-image {
+			flex: 1;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+			transform: rotate(-2deg);
+			transition: var(--transition);
+		}
+
+		.about-image:hover {
+			transform: rotate(0);
+		}
+
+		.about-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		/* Services Section */
+		.services {
+			background-color: #f9f5f0;
+		}
+
+		.services-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.service-card {
+			background: white;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			transition: var(--transition);
+			text-align: center;
+			padding: 30px;
+		}
+
+		.service-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+		}
+
+		.service-icon {
+			width: 80px;
+			height: 80px;
+			background-color: var(--light);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 20px;
+			color: var(--primary);
+			font-size: 2rem;
+		}
+
+		/* Gallery Section */
+		.gallery-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.gallery-item {
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+			height: 300px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.gallery-item img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.5s ease;
+		}
+
+		.gallery-item:hover img {
+			transform: scale(1.1);
+		}
+
+		.gallery-item .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(142, 108, 53, 0.8);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: var(--transition);
+		}
+
+		.gallery-item:hover .overlay {
+			opacity: 1;
+		}
+
+		/* Testimonials */
+		.testimonials {
+			background-color: var(--secondary);
+			color: white;
+		}
+
+		.testimonials .section-title h2 {
+			color: white;
+		}
+
+		.testimonials-container {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		.testimonial {
+			background: rgba(255, 255, 255, 0.1);
+			padding: 30px;
+			border-radius: 10px;
+			margin-bottom: 30px;
+			position: relative;
+		}
+
+		.testimonial:after {
+			content: '"';
+			position: absolute;
+			top: 20px;
+			right: 30px;
+			font-size: 5rem;
+			color: rgba(255, 255, 255, 0.1);
+			font-family: serif;
+		}
+
+		.testimonial-content {
+			font-style: italic;
+			margin-bottom: 20px;
+		}
+
+		.testimonial-author {
+			display: flex;
+			align-items: center;
+		}
+
+		.author-image {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right: 15px;
+		}
+
+		.author-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		/* Contact Section */
+		.contact-container {
+			display: flex;
+			max-width: 1200px;
+			margin: 0 auto;
+			gap: 50px;
+		}
+
+		.contact-info {
+			flex: 1;
+		}
+
+		.contact-info h3 {
+			margin-bottom: 20px;
+		}
+
+		.contact-item {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 25px;
+		}
+
+		.contact-icon {
+			width: 50px;
+			height: 50px;
+			background-color: var(--light);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--primary);
+			font-size: 1.2rem;
+			margin-right: 15px;
+			flex-shrink: 0;
+		}
+
+		.contact-text {
+			flex: 1;
+		}
+
+		.contact-form {
+			flex: 1;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 500;
+		}
+
+		.form-control {
+			width: 100%;
+			padding: 12px 15px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-family: inherit;
+			font-size: 1rem;
+			transition: var(--transition);
+		}
+
+		.form-control:focus {
+			border-color: var(--primary);
+			outline: none;
+			box-shadow: 0 0 0 3px rgba(142, 108, 53, 0.2);
+		}
+
+		textarea.form-control {
+			min-height: 150px;
+			resize: vertical;
+		}
+
+		/* Footer */
+		footer {
+			background-color: var(--secondary);
+			color: white;
+			padding: 60px 20px 30px;
+		}
+
+		.footer-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 40px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.footer-logo h3 {
+			color: white;
+			font-size: 1.8rem;
+			margin-bottom: 15px;
+		}
+
+		.footer-logo p {
+			opacity: 0.8;
+		}
+
+		.footer-links h4 {
+			color: white;
+			margin-bottom: 20px;
+			font-size: 1.2rem;
+		}
+
+		.footer-links ul {
+			list-style: none;
+		}
+
+		.footer-links ul li {
+			margin-bottom: 10px;
+		}
+
+		.footer-links ul li a {
+			color: rgba(255, 255, 255, 0.8);
+			text-decoration: none;
+			transition: var(--transition);
+		}
+
+		.footer-links ul li a:hover {
+			color: var(--accent);
+			padding-left: 5px;
+		}
+
+		.social-links {
+			display: flex;
+			gap: 15px;
+			margin-top: 20px;
+		}
+
+		.social-links a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 50%;
+			color: white;
+			transition: var(--transition);
+		}
+
+		.social-links a:hover {
+			background-color: var(--accent);
+			transform: translateY(-3px);
+		}
+
+		.copyright {
+			text-align: center;
+			padding-top: 40px;
+			margin-top: 40px;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			opacity: 0.7;
+		}
+
+		/* Animations */
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.fade-in {
+			animation: fadeInUp 1s ease forwards;
+		}
+
+		.slide-in-left {
+			animation: slideInLeft 1s ease forwards;
+		}
+
+		@keyframes slideInLeft {
+			from {
+				opacity: 0;
+				transform: translateX(-50px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.slide-in-right {
+			animation: slideInRight 1s ease forwards;
+		}
+
+		@keyframes slideInRight {
+			from {
+				opacity: 0;
+				transform: translateX(50px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.delay-1 {
+			animation-delay: 0.2s;
+		}
+
+		.delay-2 {
+			animation-delay: 0.4s;
+		}
+
+		.delay-3 {
+			animation-delay: 0.6s;
+		}
+
+		/* Responsive Styles */
+		@media (max-width: 992px) {
+			.about-content {
+				flex-direction: column;
+			}
+
+			.contact-container {
+				flex-direction: column;
+			}
+
+			.hero h1 {
+				font-size: 2.8rem;
+			}
+		}
+
+		@media (max-width: 768px) {
+			nav ul {
+				display: none;
+				position: absolute;
+				top: 80px;
+				left: 0;
+				width: 100%;
+				background: white;
+				flex-direction: column;
+				padding: 20px;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			}
+
+			nav ul.show {
+				display: flex;
+			}
+
+			nav ul li {
+				margin: 10px 0;
+			}
+
+			.mobile-menu-btn {
+				display: block;
+			}
+
+			.hero h1 {
+				font-size: 2.2rem;
+			}
+
+			.hero p {
+				font-size: 1rem;
+			}
+
+			.btn {
+				padding: 10px 20px;
+				font-size: 0.85rem;
+			}
+
+			.section-title h2 {
+				font-size: 2rem;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.hero h1 {
+				font-size: 1.8rem;
+			}
+
+			.section-title h2 {
+				font-size: 1.8rem;
+			}
+
+			.hero-btns {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+			}
+
+			.btn-outline {
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img src="icon/apple-icon-60x60.png">
+				<h1>Agasthya Bharatha Kalari Sangham</h1>
+			</div>
+
+			<nav>
+				<ul id="navMenu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<button class="mobile-menu-btn" id="menuToggle">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="hero-content">
+			<h1 class="fade-in">Traditional Kalaripayattu & Siddha Marma Treatment</h1>
+			<p class="fade-in delay-1">Experience the ancient healing traditions of Kerala through over 35 years of trusted service in authentic Kalaripayattu training and Siddha medicine treatments</p>
+			<div class="hero-btns fade-in delay-2">
+				<a href="#services" class="btn">Our Services</a>
+				<a href="#contact" class="btn btn-outline">Contact Us</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about">
+		<div class="section-title">
+			<h2>About Our Centre</h2>
+		</div>
+
+		<div class="about-content">
+			<div class="about-text slide-in-left">
+				<h3>Agasthya Bharatha Kalari Samgham Siddha Marma Treatment Centre</h3>
+				<p>[Kerala Kalarippayattu Reg: EKM/TC/154/2014]</p>
+				<p>Kerala Kalalayam, Tripunithura, Cochin, Kerala, India - 682301</p>
+				<br>
+				<p>Welcome to Agasthya Bharatha Kalari, where we preserve and practice the ancient traditions of Kalaripayattu martial arts and Siddha medicine. Our center is dedicated to holistic healing through time-tested techniques passed down through generations.</p>
+				<p>Our mission is to provide authentic training in Kalaripayattu and effective Siddha treatments, helping our students and patients achieve physical, mental, and spiritual well-being.</p>
+			</div>
+
+			<div class="about-image slide-in-right">
+				<img src="assets/images/gallery1.jpg" alt="Agasthya Bharatha Kalari Center">
+			</div>
+		</div>
+	</section>
+	
+	
+	<!-- Team Section -->
+<section id="team">
+  <div class="section-title">
+    <h2>Our Expert Team</h2>
+		<p><br><p/>
+    <p>Meet the masters behind our traditional practices</p>
+  </div>
+  
+  <div class="team-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; padding: 0 20px;">
+    <!-- Mohan Kumar Gurukkal -->
+    <div class="team-member" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 500px; transition: all 0.3s ease; transform: translateY(0);">
+      <div style="display: flex; flex-direction: column; height: 100%;">
+        <div class="member-photo" style="height: 350px; overflow: hidden; position: relative;">
+          <div style="background: linear-gradient(to bottom, rgba(142, 108, 53, 0.2), rgba(74, 53, 32, 0.7)), url('assets/images/Gurukkal_photo.jpg') center/cover; width: 100%; height: 100%;"></div>
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background: rgba(0,0,0,0.6);">
+            <h3 style="color: white; margin-bottom: 5px;">Mohan Kumar Gurukkal</h3>
+            <p style="color: #c19e5f; font-weight: 500;">Kalaripayattu and Siddha Marma Gurukkal</p>
+          </div>
+        </div>
+        <div class="member-info" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+          <div style="margin-bottom: 20px; flex-grow: 1;">
+            <p>With over 35 years of experience, Mohan Kumar Gurukkal is a revered master of Kalaripayattu. He has dedicated his life to preserving and teaching this ancient martial art form, training students from around the world in authentic Kerala traditions.</p>
+          </div>
+          <div style="display: flex; gap: 15px;">
+            <div class="expertise-tag" style="background: #f5f0e6; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: #8e6c35;">Martial Arts</div>
+            <div class="expertise-tag" style="background: #f5f0e6; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: #8e6c35;">Weapons Training</div>
+            <div class="expertise-tag" style="background: #f5f0e6; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: #8e6c35;">Traditional Healing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Dr. Arya Mohan, BSMS -->
+    <div class="team-member" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 500px; transition: all 0.3s ease; transform: translateY(0);">
+      <div style="display: flex; flex-direction: column; height: 100%;">
+        <div class="member-photo" style="height: 350px; overflow: hidden; position: relative;">
+          <div style="background: linear-gradient(to bottom, rgba(142, 108, 53, 0.2), rgba(74, 53, 32, 0.7)), url('assets/images/doctor_photo.jpg') center/cover; width: 100%; height: 100%;"></div>
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background: rgba(0,0,0,0.6);">
+            <h3 style="color: white; margin-bottom: 5px;">Dr. Arya Mohan, BSMS</h3>
+            <p style="color: #c19e5f; font-weight: 500;">Siddha Medicine Specialist</p>
+          </div>
+        </div>
+        <div class="member-info" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+          <div style="margin-bottom: 20px; flex-grow: 1;">
+            <p>Dr. Arya Mohan is a certified Siddha physician with a Bachelor of Siddha Medicine and Surgery. With expertise in traditional herbal formulations and Marma therapy, she combines ancient wisdom with modern healthcare approaches for holistic healing.</p>
+          </div>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div class="expertise-tag" style="background: #f5f0e6; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: #8e6c35;">Siddha Medicine</div>
+            <div class="expertise-tag" style="background: #f5f0e6; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: #8e6c35;">Marma Therapy</div>
+            <div class="expertise-tag" style="background: #f5f0e6; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; color: #8e6c35;">Herbal Formulations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add hover effects */
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  }
+  
+  /* Add animation when section comes into view */
+  #team .section-title {
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .team-member:nth-child(1) {
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  .team-member:nth-child(2) {
+    animation: slideInRight 1s ease forwards;
+  }
+</style>
+	
+
+	<!-- Services Section -->
+	<section class="services" id="services">
+		<div class="section-title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="services-grid">
+			<div class="service-card fade-in">
+				<div class="service-icon">
+					<i class="fas fa-fist-raised"></i>
+				</div>
+				<h3>Kalaripayattu Training</h3>
+				<p>Traditional martial arts training that improves physical fitness, flexibility, and mental focus. Learn the ancient combat techniques of Kerala.</p>
+			</div>
+
+			<div class="service-card fade-in delay-1">
+				<div class="service-icon">
+					<i class="fas fa-spa"></i>
+				</div>
+				<h3>Siddha Medicine</h3>
+				<p>Authentic Siddha treatments for various health conditions using herbal medicines and specialized therapies based on ancient wisdom.</p>
+			</div>
+
+			<div class="service-card fade-in delay-2">
+				<div class="service-icon">
+					<i class="fas fa-hand-holding-heart"></i>
+				</div>
+				<h3>Marma Treatment</h3>
+				<p>Specialized treatment focusing on vital energy points in the body to promote healing, relieve pain, and restore balance.</p>
+			</div>
+
+			<div class="service-card fade-in delay-3">
+				<div class="service-icon">
+					<i class="fas fa-leaf"></i>
+				</div>
+				<h3>Wellness Programs</h3>
+				<p>Holistic wellness retreats combining Kalaripayattu, yoga, meditation, and Ayurvedic treatments for complete rejuvenation.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Gallery Section -->
+	<section id="gallery">
+		<div class="section-title">
+			<h2>Gallery</h2>
+		</div>
+
+		<div class="gallery-grid">
+			<div class="gallery-item fade-in">
+				<img src="assets/images/culture1.jpg" alt="Kalaripayattu Training">
+				<div class="overlay">
+					<h3>Kalaripayattu</h3>
+				</div>
+			</div>
+
+			<div class="gallery-item fade-in delay-1">
+				<img src="assets/images/gallery4.jpg" alt="Siddha Treatment">
+				<div class="overlay">
+					<h3>Siddha Treatment</h3>
+				</div>
+			</div>
+
+			<div class="gallery-item fade-in delay-2">
+				<img src="assets/images/gallery7.jpg" alt="Herbal Medicines">
+				<div class="overlay">
+					<h3>Herbal Medicines</h3>
+				</div>
+			</div>
+
+			<div class="gallery-item fade-in delay-2">
+				<img src="assets/images/gallery2.jpg" alt="">
+				<div class="overlay">
+					<h3></h3>
+				</div>
+			</div>
+
+			<div class="gallery-item fade-in delay-3">
+				<img src="assets/images/group_photo2.jpg" alt="Wellness Center">
+				<div class="overlay">
+					<h3>Wellness Center</h3>
+				</div>
+			</div>
+
+			<div class="gallery-item fade-in delay-2">
+				<img src="assets/images/gallery5.jpg" alt="">
+				<div class="overlay">
+					<h3></h3>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Add this section after the Gallery section and before the Testimonials section -->
+
+	<section id="videos" style="background-color: #f8f5f0; padding: 100px 20px;">
+		<div class="section-title">
+			<h2>Watch Our Videos</h2>
+			<p><br><p/>
+			<p>Experience our training and treatments through these videos</p>
+		</div>
+
+		<div class="videos-container" style="max-width: 1200px; margin: 0 auto;">
+			<div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+				<!-- Video 1 -->
+				<div class="video-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+					<div class="video-wrapper" style="position: relative; padding-top: 56.25%;">
+						<iframe src="https://www.youtube.com/embed/dUhPTzI-jVA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+					</div>
+					<div style="padding: 20px;">
+						<h3 style="margin-bottom: 10px; color: #8e6c35;">Traditional Kalaripayattu Training</h3>
+						<p style="color: #666;">Experience the authentic martial arts techniques of Kerala</p>
+					</div>
+				</div>
+
+				<!-- Video 2 -->
+				<div class="video-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+					<div class="video-wrapper" style="position: relative; padding-top: 56.25%;">
+						<iframe src="https://www.youtube.com/embed/UQvpJZ_-4E8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+					</div>
+					<div style="padding: 20px;">
+						<h3 style="margin-bottom: 10px; color: #8e6c35;">Siddha Healing Techniques</h3>
+						<p style="color: #666;">Ancient healing methods for modern wellness</p>
+					</div>
+				</div>
+
+				<!-- Video 3 -->
+				<div class="video-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+					<div class="video-wrapper" style="position: relative; padding-top: 56.25%;">
+						<iframe src="https://www.youtube.com/embed/Lu5XPCkkOdQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+					</div>
+					<div style="padding: 20px;">
+						<h3 style="margin-bottom: 10px; color: #8e6c35;">International Yoga Day</h3>
+						<p style="color: #666;">Healing through vital energy points</p>
+					</div>
+				</div>
+
+				<!-- Video 4 -->
+				<div class="video-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+					<div class="video-wrapper" style="position: relative; padding-top: 56.25%;">
+						<iframe src="https://www.youtube.com/embed/CTSXVV_pk50" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+					</div>
+					<div style="padding: 20px;">
+						<h3 style="margin-bottom: 10px; color: #8e6c35;">Weapons Training</h3>
+						<p style="color: #666;">Mastering traditional martial arts weapons</p>
+					</div>
+				</div>
+			</div>
+
+			<div style="text-align: center; margin-top: 50px;">
+				<a href="https://www.youtube.com/@agasthyakalari" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px;">
+					<i class="fab fa-youtube" style="font-size: 1.5rem;"></i>
+					Visit Our YouTube Channel
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section class="testimonials" id="testimonials">
+		<div class="section-title">
+			<h2>Testimonials</h2>
+		</div>
+
+		<div class="testimonials-container">
+			<div class="testimonial fade-in">
+				<div class="testimonial-content">
+					"I am writing to express my sincere gratitude for your exceptional care and treatment at the Agasthya Bharatha Kalari Sangham Siddha Marma Treatment Center.
+					I visited your center on a Sunday due to severe pain in my neck and left hand. Your thorough examination and accurate diagnosis were remarkable. The treatment you provided was incredibly effective, and I experienced relief from my pain within two days. I am truly amazed by your skills and expertise.
+					Thank you so much for your support and care during my difficult time. You are a trustworthy and highly skilled individual, and I am completely satisfied with the treatment I received."
+				</div>
+				<div class="testimonial-author">
+
+					<div>
+						<h4>Rijo Siat</h4>
+						<p>Siddha Treatment Patient</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial fade-in delay-1">
+				<div class="testimonial-content">
+					"Thank you very much mohan gurukkal,my mother received such good treatment, she made a big difference just after one day of treatment."
+				</div>
+				<div class="testimonial-author">
+					<!--
+					<div class="author-image">
+						<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Praveena Bose">
+					</div>
+						-->
+					<div>
+						<h4>Praveena Bose</h4>
+						<p>Siddha Treatment Patient</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial fade-in delay-2">
+				<div class="testimonial-content">
+					"The wellness retreat was a life-changing experience. Combining martial arts, meditation, and traditional treatments created perfect balance. Highly recommended!"
+				</div>
+				<div class="testimonial-author">
+
+					<div>
+						<h4>Thaamu Chennai</h4>
+						<p>Kalaripayattu Student</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact">
+		<div class="section-title">
+			<h2>Contact Us</h2>
+		</div>
+
+		<div class="contact-container">
+			<div class="contact-info slide-in-left">
+				<h3>Get in Touch</h3>
+
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="contact-text">
+						<h4>Location</h4>
+						<p>Kerala Kalalayam, Opposite Tripunithura Bus Stand, Tripunithura, Cochin, Kerala, India - 682301</p>
+						<a href="https://maps.app.goo.gl/pXtxK8mKXypfbGjL8" class="btn" style="margin-top: 10px; padding: 8px 15px; display: inline-block;">View on Map</a>
+					</div>
+				</div>
+
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fas fa-phone-alt"></i>
+					</div>
+					<div class="contact-text">
+						<h4>Phone</h4>
+						<p>+91 854 732 9475</p>
+						<p>+91 984 713 2205</p>
+					</div>
+				</div>
+
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="contact-text">
+						<h4>Email</h4>
+						<p>mail@agasthyakalari.org</p>
+						<a href="mailto:mail@agasthyakalari.org?subject=Enquiry!" class="btn" style="margin-top: 10px; padding: 8px 15px; display: inline-block;">Email Us</a>
+					</div>
+				</div>
+
+				<div class="contact-item">
+					<div class="contact-icon">
+						<i class="fab fa-whatsapp"></i>
+					</div>
+					<div class="contact-text">
+						<h4>WhatsApp</h4>
+						<p>+91 854 732 9475</p>
+						<a href="https://wa.link/41kt05" class="btn" style="margin-top: 10px; padding: 8px 15px; display: inline-block;">Message Us</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-form slide-in-right">
+				<h3>Send a Message</h3>
+				<form action="https://formspree.io/f/mgvzaygd" method="POST">
+				  <!-- form fields -->
+				  <div class="form-group">
+				    <label for="name">Full Name</label>
+				    <input type="text" id="name" name="name" class="form-control" required>
+				  </div>
+				
+				  <div class="form-group">
+				    <label for="email">Email Address</label>
+				    <input type="email" id="email" name="email" class="form-control" required>
+				  </div>
+				
+				  <div class="form-group">
+				    <label for="phone">Phone Number</label>
+				    <input type="tel" id="phone" name="phone" class="form-control">
+				  </div>
+				
+				  <div class="form-group">
+				    <label for="message">Message</label>
+				    <textarea id="message" name="message" class="form-control" required></textarea>
+				  </div>
+				
+				  <button type="submit" class="btn">Send Message</button>
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-container">
+			<div class="footer-logo">
+				<img src="icon/apple-icon.png" alt="Agasthya Bharatha Kalari">
+				<h3>Agasthya Bharatha Kalari Sangham</h3>
+				<p>Preserving and promoting the ancient traditions of Kalaripayattu and Siddha medicine for holistic wellness.</p>
+				<div class="social-links">
+					<a href="https://www.instagram.com/agastyakalari/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/agasthyabharatha" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://www.youtube.com/@agasthyakalari" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://wa.link/41kt05" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				</div>
+			</div>
+
+			<div class="footer-links">
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#team">Our Team</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-links">
+				<h4>Our Services</h4>
+				<ul>
+					<li><a href="#">Kalaripayattu Training</a></li>
+					<li><a href="#">Siddha Medicine</a></li>
+					<li><a href="#">Marma Treatment</a></li>
+					<li><a href="#">Wellness Retreats</a></li>
+					<li><a href="#">Herbal Consultation</a></li>
+					<li><a href="#">Yoga & Meditation</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-links">
+				<h4>Contact Info</h4>
+				<ul>
+					<li><i class="fas fa-map-marker-alt"></i> Kerala Kalalayam, Tripunithura</li>
+					<li><i class="fas fa-phone-alt"></i> +91 984 713 2205</li>
+					<li><i class="fas fa-envelope"></i> mail@agasthyakalari.org</li>
+					<li><i class="fab fa-whatsapp"></i> +91 854 732 9475</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>&copy; 2025 Agasthya Bharatha Kalari Samgham Siddha Marma Treatment Centre. All Rights Reserved.</p>
+			<p>[Kerala Kalarippayattu Reg: EKM/TC/154/2014]</p>
+		</div>
+	</footer>
+
+	<script>
+		// Mobile menu toggle
+		const menuToggle = document.getElementById('menuToggle');
+		const navMenu = document.getElementById('navMenu');
+		menuToggle.addEventListener('click', () => {
+			navMenu.classList.toggle('show');
+		});
+		// Close menu when clicking a link
+		const navLinks = document.querySelectorAll('nav a');
+		navLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				navMenu.classList.remove('show');
+			});
+		});
+		// Animation on scroll
+		document.addEventListener('DOMContentLoaded', () => {
+			const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.visibility = 'visible';
+						entry.target.style.animationPlayState = 'running';
+					}
+				});
+			}, {
+				threshold: 0.1
+			});
+			animatedElements.forEach(element => {
+				// Set initial state for animated elements
+				element.style.visibility = 'hidden';
+				element.style.animationPlayState = 'paused';
+				observer.observe(element);
+			});
+		});
+		// Smooth scrolling for anchor links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					window.scrollTo({
+						top: target.offsetTop - 80,
+						behavior: 'smooth'
+					});
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
